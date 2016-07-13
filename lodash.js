@@ -5139,7 +5139,7 @@
       var sourceURL = '\n/*\n//@ sourceURL=' + (options.sourceURL || '/lodash/template/source[' + (templateCounter++) + ']') + '\n*/';
 
       try {
-        var result = Function(importsKeys, 'return ' + source + sourceURL).apply(undefined, importsValues);
+        return TEMPLATE_HASH[iteratorTemplate(data)].call(undefined, hasOwnProperty, isArguments, isArray, isString, keys, lodash, objectTypes);
       } catch(e) {
         e.source = source;
         throw e;
